@@ -1,47 +1,6 @@
-# 20170815
+# 20170816
 
-Hadoop Bauteile
-  # Hadoop
-    - HDFS
-  
-    - MapReduce 
-      # What it is, and how it works
-      # How MapReduce distribute processing
-    
-    - 
-    - [Exercise] Rank movies by their popularity
+Zuerst Artikel in Zhihu und WeChat veröffentlichen
+  # mit Screenshot von manchen Stellen
+  # 
 
-  # Pig
-    - What it is and how it works
-     - Same example "Rank movies by their popularity"
-
-  # Hive
-    - What it is and how it works
-    - Same example "Rank movies by their popularity"
-
-  # Spark
-    - What it is and how it works
-    - Same example "Rank movies by their popularity"    
-  
-  # YARN
-  
-  
-  
-  # Kafka
-
-
-  # Excecises
-    - (Other examples here all together)
-
-
-
-
-
-
-
-
-
-
-
-Hadoop History
-  # Auf Basis von den eingeführten Teilen erklären
