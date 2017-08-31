@@ -1,0 +1,77 @@
+Multimedia und Internetanwendungen (sehr interessant, aber vielleicht nicht so großer Vorteil in Deutschland wie "Unternehmensweite Softwaresysteme")
+http://www.lgmmia.fernuni-hagen.de/
+Schwerpunkte:
+	# Daten- und Dokumentenmanagement im Internet
+	# Informations- und Wissensmanagement im Internet
+	# Multimediainformationssysteme
+	# Informationsvisualisierung im Internet
+
+
+
+Unternehmensweite Softwaresysteme (Momentanes Projekt: Energie-Eff)
+http://ess.fernuni-hagen.de/
+Schwerpunkte:
+	# dem Entwurf und der Entwicklung von Multi-Agenten-Systemen (MAS) sowie der Lösung von entsprechenden Koordinationsproblemen in MAS, 
+	# der Analyse, Modellierung und der Simulation von komplexen Produktionssystemen, 
+	# der softwaretechnischen und funktionalen Gestaltung moderner Manufacturing Execution Systems (MES) und Advanced Planning and Scheduling (APS) Systems,
+	# dem Entwurf von (verteilten) Ablaufplanungsverfahren, insbesondere für Anwendungen in Unternehmen der Hochtechnologiebranche,
+	# dem Entwurf und der Nutzung objektorientierter bzw. agentenbasierter Rahmenwerke als Kompromiss zwischen Standard- und Individualsoftware für die Produktion.
+Projekte:
+	# MaXFab: Management Energieflexibler Fabriken – Die Energiewende als Chance für die Industrie
+
+
+
+Datenbanksysteme für neue Anwendungen
+http://dna.fernuni-hagen.de/
+Schwerpunkte:
+	# Geo-Relationale Algebra. Die relationale Algebra ist ein System zum "Rechnen mit Tabellen", das die Grundlage für die heute kommerziell weit verbreiteten 
+
+relationalen Datenbanksysteme darstellt. Die von uns entworfene geo-relationale Algebra erweitert die relationale Algebra um geometrische Datentypen zur Darstellung von 
+
+Punkten, Linienzügen und Polygonen (Gebieten) in der Ebene. Mit diesem Modell kann man schon interessante Anfragen über Landkarten formulieren.
+	# Gral. Das Wort "Gral" steht für "geo-relationale Algebra"; Gral ist ein von uns entworfenes und implementiertes Datenbanksystem, das Anfragen in geo-relationaler 
+
+Algebra auswertet. Hier steht die o.g. Systemarchitektur im Vordergrund; Gral ist ein erweiterbares Datenbanksystem. 
+	# Graphen in Datenbanken. Entwurf eines Datenmodells und einer Anfragesprache zur Darstellung von Netzen (Graphen) in Datenbanken. Dabei werden besonders geometrisch 
+
+eingebettete Netze (Straßen, öffentlicher Nahverkehr, Wasserwege, Leitungen, usw.) unterstützt. Anfragen können sich auf die Netzstruktur beziehen, also etwa nach kürzesten 
+
+Wegen fragen, nach allen über das Netz erreichbaren Objekten, usw.
+	# Secondo. Das Ziel ist die Entwicklung einer datenmodell-unabhängigen Architektur für Datenbanksysteme. Hier wird ein Datenbanksystem konstruiert, das in noch viel 
+
+weitgehenderer Weise erweiterbar ist als z.B. das Gral-System. Es gibt einen Formalismus, mit dem man dem Systemrahmen beschreiben kann, welche Art von Datenmodell im "Innern" 
+
+implementiert ist. (Es gibt eine Kurzbeschreibung zu Secondo in Englisch).
+	# Raum- und zeitbezogene Datenbanksysteme. Hier werden Datenmodelle und Anfragesprachen entwickelt, mit denen man Objekte in Raum und Zeit beschreiben kann, 
+
+insbesondere also bewegliche Objekte (Autos, Flugzeuge, historische Entwicklung von Ländergrenzen, Grundstücken, usw). Die Implementierung erfolgt unter Secondo. - Dieser 
+
+Schwerpunkt ist Teil des EU-Projektes Chorochronos.
+
+
+
+
+Parallelität und VLSI
+http://www.fernuni-hagen.de/pv/
+Schwerpunkte:
+	# Energie-effizientes Parallel Computing
+
+
+Kooperative Systeme (indirekte Zugänge zu dringenden Marktbedarf)
+http://www.fernuni-hagen.de/ks/
+Schwerpunkte:
+	# Design und Implementierung Kooperativer Verteilter Systeme
+	# Unterstützung des kooperativen Arbeitens und Lernens in virtuellen Organisationen
+	# Algorithmische Geometrie
+
+Rechnerarchitektur (Mikroprozessoren, Grid Computing, virtuelle Maschinen ...)
+http://www.fernuni-hagen.de/rechnerarchitektur
+Schwerpunkte:
+	# Architektur und Programmierung von Parallelrechnern
+	# Optimierung paralleler Programme (Scheduling)
+	# Scheduling bei Cluster- und Grid-Systemen
+	# Virtualisierung in parallelen Systemumgebungen (Cloud Computing)
+	# Virtuelle, fernsteuerbare Labore und immersive Umgebungen
+	# Flugassistenzsysteme
+
+
