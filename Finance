@@ -2,6 +2,7 @@ Foundation:
   # Establishing trading environment
     - Python trading environment
     - Connection of Python with MetaTrader 4
+    - Data Processing (example Hadoop, distributed, Spark etc.)
 
 
 Basics:
