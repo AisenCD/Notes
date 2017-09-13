@@ -1,15 +1,12 @@
-Foundation:
+Foundation and Basics
   # Establishing trading environment
     - Python trading environment
     - Connection of Python with MetaTrader 4
     - Data Processing (example Hadoop, distributed, Spark etc.)
-
-
-Basics:
-  # 中低频量化交易策略研发（上）.pdf
-    - https://pan.baidu.com/s/1bobB7BL
   # Python for Financial Analysis and Algorithmic Trading
     - Time serie, python, pipelines, quantopian, hedging etc.
+  # 中低频量化交易策略研发（上）.pdf
+    - https://pan.baidu.com/s/1bobB7BL
   # ML Basics and Trading
     - ...
 
@@ -21,4 +18,4 @@ Strategies:
 
 
 Analytics:
-  # Trading Cryptocurrency
+  # Trading Cryptocurrency Comments and test results presentation
