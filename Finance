@@ -1,3 +1,9 @@
+Foundation:
+  # Establishing trading environment
+    - Python trading environment
+    - Connection of Python with MetaTrader 4
+
+
 Basics:
   # 中低频量化交易策略研发（上）.pdf
     - https://pan.baidu.com/s/1bobB7BL
@@ -11,3 +17,7 @@ Strategies:
   # Black Algo Trading: Build Your Trading Robot
     - Candle Stick, Turtle, Trending following etc. 
   
+
+
+Analytics:
+  # Trading Cryptocurrency
