@@ -1,0 +1,29 @@
+Kapitel 2
+# Comparision between difference langauges
+  - Java
+      Example 2-3. Mapper for the maximum temperature example
+      Example 2-4. Reducer for the maximum temperature example
+      Example 2-5. Application to find the maximum temperature in the weather dataset
+  - Python
+      Example 2-9. Map function for maximum temperature in Python
+      Example 2-10. Reduce function for maximum temperature in Python
+  - Python (with library)
+      Exemple from Udemy
+
+# Combiner
+    Example 2-6. Application to find the maximum temperature, using a combiner function for efficiency
+ 
+
+
+Kapitel 3
+# Summary list of all Hadoop commands
+
+# Reading Data
+    Example 3-1. Displaying files from a Hadoop filesystem on standard output using a URLStreamHandler
+    Example 3-2. Displaying files from a Hadoop filesystem on standard output by using the FileSystem directly
+    Example 3-3. Displaying files from a Hadoop filesystem on standard output twice, by using seek()
+      Here’s the result of running it on a small file:
+        % hadoop FileSystemDoubleCat hdfs://localhost/user/tom/quangle.txt
+
+# Writing Data
+
