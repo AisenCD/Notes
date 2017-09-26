@@ -1,4 +1,4 @@
-Kapitel 2
+Kapital I.2 MapReduce
 # Comparision between difference langauges
   - Java
       Example 2-3. Mapper for the maximum temperature example
@@ -15,15 +15,56 @@ Kapitel 2
  
 
 
-Kapitel 3
+Kapital I.3 The HDFS (Hadoop Distributed Filesystem)
 # Summary list of all Hadoop commands
 
-# Reading Data
-    Example 3-1. Displaying files from a Hadoop filesystem on standard output using a URLStreamHandler
-    Example 3-2. Displaying files from a Hadoop filesystem on standard output by using the FileSystem directly
-    Example 3-3. Displaying files from a Hadoop filesystem on standard output twice, by using seek()
-      Here’s the result of running it on a small file:
-        % hadoop FileSystemDoubleCat hdfs://localhost/user/tom/quangle.txt
+# We dig into the Hadoop FileSystem class: the API for interacting with one of Hadoop’s filesystems.[30] Although we focus mainly on the HDFS implementation, DistributedFileSystem, in general you should strive to write your code against the FileSystem abstract class, to retain portability across filesystems.
+  - Reading Data
+      Example 3-1. Displaying files from a Hadoop filesystem on standard output using a URLStreamHandler
+      Example 3-2. Displaying files from a Hadoop filesystem on standard output by using the FileSystem directly
+      Example 3-3. Displaying files from a Hadoop filesystem on standard output twice, by using seek()
+        Here’s the result of running it on a small file:
+          % hadoop FileSystemDoubleCat hdfs://localhost/user/tom/quangle.txt
+  - Writing Data
+      Example 3-4. Copying a local file to a Hadoop filesystem
+  - Querying the Filesystem
+      Example 3-5. Demonstrating file status information
+      Example 3-6. Showing the file statuses for a collection of paths in a Hadoop filesystem
+      Example 3-7. A PathFilter for excluding paths that match a regular expression      
+  - Parallel Copying with distcp  
 
-# Writing Data
+# Data Flow
+    Description with supporting texts
+    Figure 3-2. A client reading data from HDFS
+    Figure 3-4. A client writing data to HDFS
+
+
+
+Kapital I.4 YARN
+# Running YARN Application
+    Figure 4-2. How YARN runs an application
+      In an ideal world, the requests that a YARN application makes would be granted immediately. In the real world, however, resources are limited, and on a busy cluster, an application will often need to wait to have some of its requests fulfilled. It is the job of the YARN scheduler to allocate resources to applications according to some defined policy.
+# YARN compared to MapReduce
+    Table 4-1. A comparison of MapReduce 1 and YARN components
+    Availability, Utilization, Multitenancy
+# Scheduling in YARN
+    Scheduler Options
+      Figure 4-3. Cluster utilization over time when running a large job and a small job under the FIFO Scheduler (i),
+Capacity Scheduler (ii), and Fair Scheduler (iii)
+    Capacity Scheduler Configuration
+      Example 4-1. A basic configuration file for the Capacity Scheduler
+      Figure 4-4. Fair sharing between user queues
+      Example 4-2. An allocation file for the Fair Scheduler
+          
+
+Kapital I.5 Hadoop I/O
+# SequenceFile
+    Example 5-10. Writing a SequenceFile
+      % hadoop SequenceFileWriteDemo numbers.seq
+    Example 5-11. Reading a SequenceFile
+      % hadoop SequenceFileReadDemo numbers.seq
+    Displaying a SequenceFile with the command-line interface
+    Sorting and merging SequenceFiles
+
+
 
