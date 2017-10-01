@@ -1,0 +1,10 @@
+熟悉IO，多线程，异步处理，集合类等基础框架和常用中间件产品，熟悉缓存，消息，搜索等机制
+熟悉JVM运行机制和内存管理
+
+
+最近5年133个Java面试问题列表
+	http://www.importnew.com/17232.html
+
+133 Core Java Interview Questions Answers From Last 5 Years - The MEGA List
+	http://javarevisited.blogspot.de/2015/10/133-java-interview-questions-answers-from-last-5-years.html
+	
