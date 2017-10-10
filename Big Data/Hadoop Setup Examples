@@ -1,0 +1,32 @@
+Cloudera QuickStart VM
+  Usage & Installation
+    https://blog.cloudera.com/blog/2014/01/nyu-analytics-and-clouderas-quickstart-vm/
+  Examples
+    Build Big Data Pipelines w/ Hadoop, Flume, Pig, MongoDB
+
+
+
+Hadoop Installation
+  Hadoop
+    Hadoop Localhost
+      http://whatbeg.com/2016/08/31/hadoop-install.html
+      https://haojunsui.github.io/2016/06/21/hadoop-single/
+    Hadoop Pseudonode
+      http://whatbeg.com/2016/09/02/hadoop-install-2.html
+    Hadoop Multiple Nodes
+      http://blog.topspeedsnail.com/archives/9950
+      https://jerrynest.io/install-hadoop-on-ubuntu/
+      http://www.cc.ntu.edu.tw/chinese/epaper/0036/20160321_3609.html
+      http://twlinzino.blogspot.de/2016/03/ubuntu-hadoop-272.html
+
+
+  Pig
+    Installation & Examples
+      https://www.guru99.com/introduction-to-pig-and-hive.html
+      https://pig.apache.org/docs/r0.7.0/setup.html
+      https://www.ibm.com/developerworks/cn/linux/l-apachepigdataquery/index.html
+  
+  
+  Hive
+    
+  
