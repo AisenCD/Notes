@@ -1,0 +1,29 @@
+CASE
+
+    ich würde sagen es wäre möglich dass das File sofort vom Partner aufgenommen wurde, und wir dann trotz zeitnah Checkens das File nicht finden können.
+
+    Es hinterlässt aber eine Spur bei der Änderungszeit vom Ordner, z.B. hier sehen wir den Rekord vom letzten PUSH durch HL (gestern 12:02 Uhr von Partner-Serverzeit in USA und 17:02 Uhr von unserer Serverzeit nach UTC).
+
+    Letzte Änderung im Partner-Ordner als Server:
+    ftp> ls
+    229 Entering Extended Passive Mode (|||55004|)
+    150 Opening ASCII mode data connection.
+    10-25-17  12:03PM       <DIR>          997
+    10-25-17  12:02PM       <DIR>          accept
+    12-15-16  11:29AM       <DIR>          reject
+    10-06-17  10:10AM       <DIR>          xls
+    226 Transfer complete.
+
+    Letzter Eintrag bei uns als Client:
+    10252017:163601:  0: --- Move files from /var/proftpd-ft01-6/gentran/out/ushdi01 to /var/proftpd-ft01-6/ushdi01/to
+    10252017:163601:  0: Moved 0422543O_INVDAT.492D7Y.656698653.1
+    10252017:170202:  0: --- Move files from /var/proftpd-ft01-6/gentran/out/ushdi01 to /var/proftpd-ft01-6/ushdi01/to
+    10252017:170202:  0: Moved 0422543O_INVDAT.492E0V.656713794.1
+
+
+    Da der Datenaustausch mit ushdi01 nicht sehr häufig ist, kann man die Änderungszeit vergleichen, um zu schätzen, ob eine Datei doch zum Ordner angekommen ist.
+
+    Könntest Du vielleicht nochmal auf Basis von Ordner-Änderungszeit testen? Oder mir einige Testmessages schicken, die ich zum Testen einsetzen kann.
+
+
+
