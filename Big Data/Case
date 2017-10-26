@@ -27,3 +27,11 @@ CASE
 
 
 
+CASE
+    Thank you, It seemed to get an IO error during the FTP session below.
+    Do you see anything in the logs – error while retrieving file name: 0222356O_COREOR.655027107.499904822.1 ? 
+    com.navis.framework.util.BizFailure: System exception occurred: class=class org.apache.commons.net.io.CopyStreamException, message=IOException caught while copying., root cause=
+    {2}
+    /
+    {3}
+    . root-cause=class org.apache.commons.net.io.CopyStreamException/IOException caught while copying.
