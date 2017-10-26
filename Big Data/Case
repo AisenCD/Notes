@@ -35,3 +35,71 @@ CASE
     /
     {3}
     . root-cause=class org.apache.commons.net.io.CopyStreamException/IOException caught while copying.
+
+
+
+
+CASE Axway
+
+    2017-10-25 22:19:02,159 - INFO  [Worker4-500183] (HttpClientBase.connectViaDmzProxy:187) - Connecting to HTTP server naa1.gtnexus.com/208.87.221.107:4080 via DMZ node proxy
+    2017-10-25 22:19:02,162 - INFO  [Worker21-501597] (HttpClientBase.connectViaDmzProxy:187) - Connecting to HTTP server naa1.gtnexus.com/208.87.221.107:4080 via DMZ node proxy
+
+    2017-10-25 22:19:06,130 - WARN  [recv: kfdced21_cn] (ReceiveThread.doIt:63) - Shutting down connection to kfdced21_cn: null
+    2017-10-25 22:19:06,131 - WARN  [Worker28-501381] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,131 - WARN  [Worker41-501164] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,131 - WARN  [Worker7-501053] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,132 - WARN  [Worker39-501757] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,132 - WARN  [Worker37-502477] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,132 - WARN  [Worker50-501913] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,132 - WARN  [Worker51-501334] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,132 - WARN  [Worker31-501965] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,132 - WARN  [Worker4-500184] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,132 - WARN  [Worker9-502559] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,132 - WARN  [Worker16-500959] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,132 - WARN  [Worker8-502235] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,133 - WARN  [Worker46-502124] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,133 - WARN  [Worker19-503529] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,133 - WARN  [Worker25-501720] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,133 - WARN  [Worker2-502006] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,133 - WARN  [Worker10-501675] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,133 - WARN  [Worker44-500907] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,133 - WARN  [Worker24-502530] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,133 - WARN  [Worker26-502108] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,133 - WARN  [Worker17-502243] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,134 - WARN  [Worker1-502250] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,134 - WARN  [Worker3-502729] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,134 - WARN  [Worker6-502489] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,134 - WARN  [Worker57-502723] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,134 - WARN  [Worker29-500968] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,134 - WARN  [Worker36-501815] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,134 - WARN  [Worker33-502219] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,134 - WARN  [Worker52-501542] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,134 - WARN  [Worker0-502451] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,135 - WARN  [Worker34-502500] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,135 - WARN  [Worker14-501784] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,135 - WARN  [Worker42-503320] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,135 - WARN  [Worker55-502170] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,135 - WARN  [Worker49-501700] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,135 - WARN  [Worker21-501597] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,135 - WARN  [Worker54-501590] (TokenWorker.sendMessage:224) - Error sending message to master node kfdced21_cn
+    2017-10-25 22:19:06,237 - FATAL [HeartbeatUpdater] (HeartbeatUpdater.updateHeartbeat:107) - The ClusterMembership entry for kfdced22_te has been removed
+    2017-10-25 22:19:12,969 - INFO  [Startup] (ClusterController.connect:63) - Node kfdced22_te, of type TE is connecting to the cluster
+    2017-10-25 22:19:13,019 - INFO  [Startup] (AcceptorThread.bindServerSocket:86) - Listening for node connections on port 47002
+    2017-10-25 22:19:13,829 - INFO  [Startup] (MembershipManager.addConnection:131) - Node kfdced22_te has joined the cluster
+    2017-10-25 22:19:14,046 - INFO  [ConnectTo: kfdced21_te] (MembershipManager.addConnection:131) - Node kfdced21_te has joined the cluster
+    2017-10-25 22:19:14,049 - INFO  [ConnectTo: kfdced22_cn] (MembershipManager.addConnection:131) - Node kfdced22_cn has joined the cluster
+    2017-10-25 22:19:26,360 - INFO  [Cluster Thread 50] (TokenManager.getOutstandingTokens:428) - Updating the TokenPresident id from: null to: 9ffee97c-8d42-4849-a5d6-ce50d8bfcd6e
+    2017-10-25 22:19:26,528 - INFO  [Startup] (Node.logNodeInfo:354) - *************************
+    2017-10-25 22:19:26,529 - INFO  [Startup] (Node.logNodeInfo:355) - Starting node kfdced22_te
+    2017-10-25 22:19:26,530 - INFO  [Startup] (Node.logNodeInfo:356) - *************************
+    2017-10-25 22:19:26,532 - INFO  [Startup] (SystemUtil.logSystemInfo:83) - OS: AIX 7.1, architecture=ppc64, user=hlagip1, home=/home/hlagip1
+    2017-10-25 22:19:26,537 - INFO  [Startup] (SystemUtil.logSystemInfo:84) - JVM: IBM Corporation 1.8.0, free memory=1.2 GB, total memory=1.5 GB, char set=ISO-8859-1, home=/opt/axway/Interchange512/Java/aix-power/jre8_u00_64, temp dir=/tmp/
+    2017-10-25 22:19:26,606 - INFO  [Startup] (SystemUtil.logSystemInfo:85) - JVM class path: ../classes:/opt/axway/Interchange512/Interchange/jars/apiexamples.jar:/opt/axway/Interchange512/Interchange/jars/com.axway.b2bi.pm.server-2.0.0.jar:/opt/axway/Interchange512/Interchange/jars/com.axway.b2bi.pm.server-
+
+    [...]
+
+    2017-10-25 22:19:40,211 - WARN  [recv: kfdced21_te] (ReceiveThread.doIt:63) - Shutting down connection to kfdced21_te: null
+    2017-10-25 22:19:40,259 - WARN  [recv: kfdced21_te] (MembershipManager.removeConnection:173) - Remove stale node from database (kfdced21_te) because communication was lost
+    2017-10-25 22:19:40,282 - INFO  [MembershipChanged] (StartedNodes.nodeStopped:238) - Node kfdced21_te has stopped.
+    2017-10-25 22:19:52,006 - INFO  [ClusterConnectionAcceptor: /194.9.148.54:53390] (MembershipManager.addConnection:131) - Node kfdced21_cn has joined the cluster
+    2017-10-25 22:19:54,201 - INFO  [ClusterConnectionAcceptor: /194.9.148.54:53410] (MembershipManager.addConnection:131) - Node kfdced21_te has joined the cluster
