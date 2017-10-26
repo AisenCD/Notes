@@ -1,3 +1,8 @@
+CASE (Bad Design)
+    ftp_special.scr
+    ftp_webbl_ediroute.sh
+
+
 CASE
 
     ich würde sagen es wäre möglich dass das File sofort vom Partner aufgenommen wurde, und wir dann trotz zeitnah Checkens das File nicht finden können.
