@@ -1,3 +1,12 @@
+CASE
+    Sagt euch der script :
+    check the server.
+    kfdced06:~ # ps -ef | grep 18883
+    esbarch  18883 18879 93 05:00 ?        09:54:14 /bin/bash /home/esbarch/script/datapower_summary/ip_aggregation_reject.sh
+
+    auf dem Archivserver was(kfdced06)
+
+
 CASE (Bad Design)
     ftp_special.scr
     ftp_webbl_ediroute.sh
