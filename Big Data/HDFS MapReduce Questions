@@ -97,14 +97,14 @@ Table of Contents
 
 
 
-(OK) 1.8. HDFS如何写入文件？
+1.8. HDFS如何写入文件？
   3.6.2
-    Answer: % hadoop distcp hdfs://namenode1/foo hdfs://namenode2/bar
+
     
 
-1.9. HDFS集群之间如何传输数据？
+(OK) 1.9. HDFS集群之间如何传输数据？
   3.8
-
+    Answer: % hadoop distcp hdfs://namenode1/foo hdfs://namenode2/bar
 
 
 
