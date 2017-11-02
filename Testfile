@@ -1,0 +1,148 @@
+
+# dos2unix ip_aggregation_reject.sh
+
+YESTERDAY=`TZ=aaa24 date +%Y-%m-%d`
+YESTERDAY_DAY=`TZ=aaa24 date +%Y%m%d`
+# YESTERDAY=2017-10-07
+# YESTERDAY_DAY=20171007
+
+LOGFILE_DATAPOWER=/home/esbarch/ESB
+
+LOGFILE_EB01=$LOGFILE_DATAPOWER/daily.eb01.$YESTERDAY_DAY.log
+LOGFILE_EB02=$LOGFILE_DATAPOWER/daily.eb02.$YESTERDAY_DAY.log
+
+WORK_DIRECTORY=/home/esbarch/script/datapower_summary_qlikview
+
+# cat $LOGFILE_EB01 $LOGFILE_EB02 > $WORK_DIRECTORY/daily.$YESTERDAY_DAY.log
+cat $LOGFILE_EB01 $LOGFILE_EB02 > $WORK_DIRECTORY/logfile_merged.log
+
+
+################################################################
+
+# =============================================================================
+# adjust the logfile (logfile_merged.log) to faster build further matrix
+# =============================================================================
+
+cut -f1 -d',' ${WORK_DIRECTORY}/logfile_begin_end_sort.log | uniq -c
+
+
+# --------------------------------------------------------------
+# clean request lines (logfile_merged_request.log)
+# clean response lines (logfile_merged_response.log)
+# clean error lines (logfile_merged_error.log)
+# --------------------------------------------------------------
+grep request $WORK_DIRECTORY/logfile_merged.log | cut -f1-7,12-14 -d',' | cut -f1,2 -d'"' | sed 's/"//g' | sed 's/T/,/g' | sed 's/Z//g' > $WORK_DIRECTORY/logfile_merged_request.log
+grep response $WORK_DIRECTORY/logfile_merged.log | cut -f1,12,15,7 -d',' | sed 's/REPLY/"REPLY/g' | sed 's/T/,/g' | sed 's/Z//g' > $WORK_DIRECTORY/logfile_merged_response.log
+grep error $WORK_DIRECTORY/logfile_merged.log | cut -f1,12,15,7 -d',' | sed 's/REPLY/"REPLY/g' | sed 's/T/,/g' | sed 's/Z//g' > $WORK_DIRECTORY/logfile_merged_error.log
+
+# echo `date +"%Y%m%d:%H%M%S"`:'  '0: cleaning logfile and only keep necessary infos >> $WORK_DIRECTORY/script_processcing.log
+
+
+
+# --------------------------------------------------------------
+# delete lines with incomplete information (single TID lines)
+# --------------------------------------------------------------
+
+# echo `date +"%Y%m%d:%H%M%S"`:'  '0: deleting lines with incomplete information \(single TID lines\) >> $WORK_DIRECTORY/script_processcing.log
+
+# # get single TID lines
+# cut -f1 -d'|' ${WORK_DIRECTORY}/logfile_begin_end_sort.log | uniq -c | sort | rev | awk -F" " '$2 == "1" { print $1" "$2 }' | rev | cut -f2 -d' ' > ${WORK_DIRECTORY}/single_row.txt
+# cp -p ${WORK_DIRECTORY}/logfile_begin_end_sort.log ${WORK_DIRECTORY}/logfile_begin_end_sort_2.log
+
+# # delete single TID lines
+# STRING_SINGLE_LINE=`head -n 1 ${WORK_DIRECTORY}/single_row.txt`
+# # N=0
+# while read line
+# do
+	# # echo $line
+	# # N=$(($N+1))
+	# # echo $N
+	# STRING_SINGLE_LINE="$STRING_SINGLE_LINE|$line"
+# done < ${WORK_DIRECTORY}/single_row.txt
+
+# # echo $STRING_SINGLE_LINE
+# grep -v -E "($STRING_SINGLE_LINE)" ${WORK_DIRECTORY}/logfile_begin_end_sort_2.log > ${WORK_DIRECTORY}/logfile_begin_end_sort_2.log.tmp
+# mv ${WORK_DIRECTORY}/logfile_begin_end_sort_2.log.tmp ${WORK_DIRECTORY}/logfile_begin_end_sort_2.log
+
+
+
+
+# # ---------------------------------------------------
+# # process lines with four rows of same TID
+# # ---------------------------------------------------
+# echo `date +"%Y%m%d:%H%M%S"`:'  '0: deleting lines with error tid \(four lines same tid\) >> $WORK_DIRECTORY/script_processcing.log
+
+# cp ${WORK_DIRECTORY}/logfile_begin_end_sort_2.log ${WORK_DIRECTORY}/logfile_begin_end_sort_3.log
+
+# # get four TID lines
+# cut -f1 -d'|' ${WORK_DIRECTORY}/logfile_begin_end_sort_3.log | uniq -c | sort | rev | awk -F" " '$2 == "4" { print $1" "$2 }' | rev | cut -f2 -d' ' > ${WORK_DIRECTORY}/four_tid_row.txt
+
+# # delete four TID lines
+# STRING_FOUR_LINE=`head -n 1 ${WORK_DIRECTORY}/four_tid_row.txt`
+
+# if [ ! -z "$STRING_FOUR_LINE" ]; then
+    # while read line
+	# do
+		# # echo $line
+		# STRING_FOUR_LINE="$STRING_FOUR_LINE|$line"
+	# done < ${WORK_DIRECTORY}/four_tid_row.txt
+	# grep -v -E "($STRING_FOUR_LINE)" ${WORK_DIRECTORY}/logfile_begin_end_sort_3.log > ${WORK_DIRECTORY}/logfile_begin_end_sort_3.log.tmp
+	# mv ${WORK_DIRECTORY}/logfile_begin_end_sort_3.log.tmp ${WORK_DIRECTORY}/logfile_begin_end_sort_3.log	
+# fi
+
+# mv ${WORK_DIRECTORY}/logfile_begin_end_sort_3.log ${WORK_DIRECTORY}/logfile_begin_end.log
+
+
+
+
+
+
+
+
+
+
+
+20171031T234653.884Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178327667,178327667,192.168.164.106,0x8580005c,,request,"125.121.218.44,traceByContainer",952873
+20171031T234653.950Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178327619,178327619,192.168.164.106,0x8580005c,,response,"125.121.218.44,traceByContainer,REPLY OK",952874
+20171031T234654.004Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178327683,178327683,192.168.164.106,0x8580005c,,request,"125.121.218.44,traceByContainer",952875
+20171031T234654.434Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,211243538,211243538,192.168.164.106,0x8580005c,,request,"125.121.218.44,traceByContainer",952876
+20171031T234654.441Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178327715,178327715,192.168.164.106,0x8580005c,,request,"125.121.218.44,traceByContainer",952877
+20171031T234655.002Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,211243570,211243570,192.168.164.106,0x8580005c,,request,"125.121.218.44,traceByContainer",952878
+20171031T234655.205Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178327891,178327891,192.168.164.106,0x8580005c,,request,"101.68.160.68,listRoutingProposals",952879
+20171031T234655.215Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178327891,178327891,192.168.164.106,0x8580005c,,error,"101.68.160.68,listRoutingProposals,REPLY ERROR: Rejected by SLM Monitor",952880
+20171031T234656.217Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178327651,178327651,192.168.164.106,0x8580005c,,response,"125.121.218.44,traceByContainer,REPLY OK",952881
+20171031T234656.399Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178327955,178327955,192.168.164.106,0x8580005c,,request,"125.121.218.44,traceByContainer",952882
+20171031T234657.308Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,211243298,211243298,192.168.164.106,0x8580005c,,response,"125.121.218.44,traceByContainer,REPLY OK",952883
+20171031T234657.713Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,211243506,211243506,192.168.164.106,0x8580005c,,response,"125.121.218.44,traceByContainer,REPLY OK",952884
+20171031T234657.839Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,211243650,211243650,192.168.164.106,0x8580005c,,request,"125.121.218.44,traceByContainer",952885
+20171031T234658.265Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178327667,178327667,192.168.164.106,0x8580005c,,response,"125.121.218.44,traceByContainer,REPLY OK",952886
+20171031T234658.305Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178328035,178328035,192.168.164.106,0x8580005c,,request,"125.121.218.44,traceByContainer",952887
+20171031T234658.456Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178327683,178327683,192.168.164.106,0x8580005c,,response,"125.121.218.44,traceByContainer,REPLY OK",952888
+20171031T234658.619Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,211243538,211243538,192.168.164.106,0x8580005c,,response,"125.121.218.44,traceByContainer,REPLY OK",952889
+20171031T234658.633Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178325523,178325523,192.168.164.106,0x8580005c,,response,"114.230.203.78,listRoutingProposals,REPLY OK",952890
+20171031T234658.763Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178327715,178327715,192.168.164.106,0x8580005c,,response,"125.121.218.44,traceByContainer,REPLY OK",952891
+20171031T234658.891Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,211243570,211243570,192.168.164.106,0x8580005c,,response,"125.121.218.44,traceByContainer,REPLY OK",952892
+20171031T234658.952Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178327955,178327955,192.168.164.106,0x8580005c,,response,"125.121.218.44,traceByContainer,REPLY OK",952893
+20171031T234659.028Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,211243762,211243762,192.168.164.106,0x8580005c,,request,"115.55.196.33,listRoutingProposals",952894
+20171031T234659.038Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,211243762,211243762,192.168.164.106,0x8580005c,,error,"115.55.196.33,listRoutingProposals,REPLY ERROR: Rejected by SLM Monitor",952895
+20171031T234659.087Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,211243650,211243650,192.168.164.106,0x8580005c,,response,"125.121.218.44,traceByContainer,REPLY OK",952896
+20171031T234659.236Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178328035,178328035,192.168.164.106,0x8580005c,,response,"125.121.218.44,traceByContainer,REPLY OK",952897
+20171031T234659.244Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,211243778,211243778,192.168.164.106,0x8580005c,,request,"125.121.218.44,traceByContainer",952898
+20171031T234659.619Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178328099,178328099,192.168.164.106,0x8580005c,,request,"114.234.153.210,listRoutingProposals",952899
+20171031T234659.629Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178328099,178328099,192.168.164.106,0x8580005c,,error,"114.234.153.210,listRoutingProposals,REPLY ERROR: Rejected by SLM Monitor",952900
+20171031T234659.666Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,211243778,211243778,192.168.164.106,0x8580005c,,response,"125.121.218.44,traceByContainer,REPLY OK",952901
+20171031T234700.196Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178328307,178328307,192.168.164.106,0x8580005c,,request,"115.197.166.64,listRoutingProposals",952902
+20171031T234700.205Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178328307,178328307,192.168.164.106,0x8580005c,,error,"115.197.166.64,listRoutingProposals,REPLY ERROR: Rejected by SLM Monitor",952903
+20171031T234700.722Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178328323,178328323,192.168.164.106,0x8580005c,,request,"112.113.63.150,listRoutingProposals",952904
+20171031T234700.731Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178328323,178328323,192.168.164.106,0x8580005c,,error,"112.113.63.150,listRoutingProposals,REPLY ERROR: Rejected by SLM Monitor",952905
+20171031T234701.396Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,211243906,211243906,192.168.164.106,0x8580005c,,request,"125.121.218.44,traceByContainer",952906
+20171031T234701.411Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178328355,178328355,192.168.164.106,0x8580005c,,request,"114.234.168.177,listRoutingProposals",952907
+20171031T234701.422Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178328355,178328355,192.168.164.106,0x8580005c,,error,"114.234.168.177,listRoutingProposals,REPLY ERROR: Rejected by SLM Monitor",952908
+20171031T234701.618Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,211243922,211243922,192.168.164.106,0x8580005c,,request,"125.121.218.44,traceByContainer",952909
+20171031T234701.629Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,211243906,211243906,192.168.164.106,0x8580005c,,response,"125.121.218.44,traceByContainer,REPLY OK",952910
+20171031T234701.921Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178328451,178328451,192.168.164.106,0x8580005c,,request,"114.235.41.235,listRoutingProposals",952911
+20171031T234701.934Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178328451,178328451,192.168.164.106,0x8580005c,,error,"114.235.41.235,listRoutingProposals,REPLY ERROR: Rejected by SLM Monitor",952912
+20171031T234701.991Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,211243922,211243922,192.168.164.106,0x8580005c,,response,"125.121.218.44,traceByContainer,REPLY OK",952913
+20171031T234702.242Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,211243938,211243938,192.168.164.106,0x8580005c,,request,"125.121.218.44,traceByContainer",952914
+20171031T234702.267Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,178328483,178328483,192.168.164.106,0x8580005c,,request,"125.121.218.44,traceByContainer",952915
+20171031T234702.490Z,PROD,hl_mobile_app,notice,wsgw,com.hlag.esb.services.mobile.mobileService.MobileService,211243954,211243954,192.168.164.106,0x8580005c,,request,"115.209.78.179,listRoutingProposals",952916
