@@ -1,4 +1,15 @@
 CASE
+    Frage: Jetzt habe ich noch eine Frage zu uscpg02 und zum Alternativserver.
+        Ich hatte verstanden von euch, dass wir Verbindungen, die kritisch aus verschiedenen Aspekten sind und  sie auf den Axway Standardweg NICHT gut funktionieren/bzw. zurückgedreht wurden, auf den AF gehen sollen. Deswegen sind wir in unserem ersten Meeting Verbindung für Verbindung durchgegangen um dieses zu entscheiden (uscpg02 ist grosser und wichtiger Kunde für die Amerikaner).
+        Also ist demzufolge der AF der Weg, der immer gehen sollte, wenn alles andere nicht mehr funktioniert. Jetzt haben wir  uscpg02 mit seinen Beschwerden auf den AF gehabt. Das steht etwas im Gegensatz zu der Aussage, dass AF für kritische Verbindungen das Richtige ist.
+        Wir können gerne jetzt erneut den Standardweg probieren, der UAT im Test wir uns aber auch nicht weiterbringen, da es sich um verschiedene Server, und somit um verschiedene Verbindungen in Prod und Test handelt. Da uscpg02 schon mal auf den Standardweg war und es nicht gut ging, warum versprichst du dir dieses Mal mehr? Haben wir da Garantien, da dann der AF wohl als Lösung auch wirklich ausfällt….
+    Antwort: zur UAT-Umgebung mit Partner und Axway: 
+        Mit Axway-Test können wir das Loglevel von INFO auf DEBUG hochsetzen und besser testen. Wenn wir das Loglevel in Axway-Prod hochsetzen, würden zu viele Logs einfluten und nicht ideal.
+        Daher macht es schon Sinn zu versuchen, ob wir die Incidents durch UAT-Umgebung vom Partner und Axway-Test reproduzieren können. Falls ja, drehen wir das Loglevel hoch und bekommen bessere Einsicht vom Problem.
+
+
+
+CASE
     Sagt euch der script :
     check the server.
     kfdced06:~ # ps -ef | grep 18883
