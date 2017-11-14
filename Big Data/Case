@@ -1,4 +1,48 @@
 CASE
+    Alter EDI-Weg (vom kfdcft01)  hier kommt eine Verbindung zu stande
+    
+    ftpadm@kfdcft01:~/zielidi/testcases> /sbin/tracepath ediftp.railconnect.com/21
+    1:  kfdcft01.hlcl.com (193.17.48.244)                      0.060ms pmtu 1500
+    1:  no reply
+    2:  no reply
+    3:  no reply
+    4:  no reply
+    5:  no reply
+    6:  no reply
+    7:  no reply
+    8:  no reply
+    9:  no reply
+    10:  no reply
+    11:  204.10.21.241 (204.10.21.241)                        asymm 14 115.123ms
+    12:  no reply
+    13:  no reply
+    14:  no reply
+
+    Neuer EDI-Weg (vom kfdced23)  hier kommt keine Verbindung zu stande
+    
+    hlagip1@kfdced23:/home/hlagip1> /sbin/tracepath ediftp.railconnect.com/21
+    1:  kfdced23.hlcl.com (194.9.166.145)                      0.100ms pmtu 1500
+    1:  defrqlb011hlcfm-vlan216.ww.hl.lan (194.9.166.130)      0.401ms
+    2:  no reply
+    3:  no reply
+    4:  no reply
+    5:  no reply
+    6:  no reply
+    7:  no reply
+    8:  no reply
+    9:  no reply
+    10:  no reply
+    11:  no reply
+    12:  no reply
+    13:  no reply
+    14:  no reply
+    15:  no reply
+    16:  no reply
+
+
+
+
+CASE
     Frage: Jetzt habe ich noch eine Frage zu uscpg02 und zum Alternativserver.
         Ich hatte verstanden von euch, dass wir Verbindungen, die kritisch aus verschiedenen Aspekten sind und  sie auf den Axway Standardweg NICHT gut funktionieren/bzw. zurückgedreht wurden, auf den AF gehen sollen. Deswegen sind wir in unserem ersten Meeting Verbindung für Verbindung durchgegangen um dieses zu entscheiden (uscpg02 ist grosser und wichtiger Kunde für die Amerikaner).
         Also ist demzufolge der AF der Weg, der immer gehen sollte, wenn alles andere nicht mehr funktioniert. Jetzt haben wir  uscpg02 mit seinen Beschwerden auf den AF gehabt. Das steht etwas im Gegensatz zu der Aussage, dass AF für kritische Verbindungen das Richtige ist.
