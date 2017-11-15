@@ -4,6 +4,14 @@ Inbound-Daten aus FTP, Webservice z.B.
 
 Konkretere Anwendungsfälle z.B. auf Basis von Oozie zu Hadoop.
 Gibt's Bedarf nach Storm?
+Zuerst ElasticSearch
+
+Mögliche Projekte:
+  # Generelle Architektur-Optimierung (Hadoop)
+  # Unternehmensweite Doku-Pool (SearchEngine gebraucht, ELK, Solr etc.)
+  # Visualisierungstool (Qlikview)
+
+Da IT-Abteilung stark vom Business ableitend ist, daher Motivation nach einer IT-Produkt-Driven-Unternehmen
 
 
 
