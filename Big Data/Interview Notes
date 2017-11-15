@@ -1,4 +1,13 @@
+Manche (Prozent?) Daten fließen nach Host
+Manche (Prozent?) Daten fließen nach SAP
+Inbound-Daten aus FTP, Webservice z.B.
 
+Konkretere Anwendungsfälle z.B. auf Basis von Oozie zu Hadoop.
+Gibt's Bedarf nach Storm?
+
+
+
+#################################################################
 
 Hadoop Erfahrung:
   # erste Erfahrung gesammlt, weil Firma neue Daten von Container-Überwachung aufnehmen, und neue Architektur (Hadoop) gebraucht ist.
