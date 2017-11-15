@@ -13,6 +13,29 @@ CASE
 
 
 CASE
+    Hallo,
+    u. g. Einträgen könnten darin begründet sein, dass ich gestern um die besagte Zeit einen Test gegen den Partner-Server gemacht habe via:
+
+    kfdced23 > /sbin/tracepath ediftp.railconnect.com/21
+
+    Wenn ich nach dem Absetzen eines solchen Befehles in das Firewall-Log gucke sieht es ähnlich Rot aus.
+
+    Mache ich hingegen nur ein simples FTP Command, wie z. B.
+
+    kfdced23> ftp ediftp.railconnect.com
+
+    Dann sieht der Eintrag in der Firewall-Log schon etwas freundlicher aus:
+
+
+
+    Für mich sieht es schon so aus, als wenn unsere Firewall den Request durchlassen würde. Aber wie gesagt, bekommen wir über DIESEN Server (kfdced23) KEINE FTP-Verbindung zum Partner.
+    Jedoch machen wir die Verbindung vom kfdcft01 (alter EDI-FTP-Server) dann schon (das ist ja das merkwürdige). Beide male sehen die Firewalleinträge grün aus, somit würde ich vermuten, dass der Partner bei sich eine Firewall hat und nur die eine IP (von kfdcft01) durchlässt und die andere (vom kfdced23) nicht. Der Partner jedoch behaupte, er hätte keinen Firewalleintrag diesbezüglich.
+
+    Frage nun: ist das glaubwürdig?
+
+
+
+CASE
     Alter EDI-Weg (vom kfdcft01)  hier kommt eine Verbindung zu stande
     
     ftpadm@kfdcft01:~/zielidi/testcases> /sbin/tracepath ediftp.railconnect.com/21
