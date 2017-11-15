@@ -1,4 +1,18 @@
 CASE
+    zum Partner fihac02:
+
+    Dieser Partner macht jede 5 Minuten eine Abholung aus Axway, mit dem Wunsch dass die Verbindung ständig aktiv bleibt und sie keine QUIT eingeben brauchen.
+
+    In Axway FTP-Server ist es momentan so konfiguriert, dass die FTP-Verbindung 90 Sekunden aktiv bleibt, bevor Timeout kommt.
+    Wenn wir Timeout-Schranke ändern/erhöhen, werden alle anderen FTP-Verbindungen getroffen. 
+    Es ist für uns dann nicht günstig, da eine stark erhöhte Belastung von gleichzeitigen Verbindungen dadurch entstehen könnte.
+
+    Ich sehe hier zwei mögliche Lösungen:
+    1.	Ideal: Der Partner fügt einen QUIT in sein Script, fertig.
+    2.	Nicht ideal aber OK: Der Partner konfiguriert seine Abholfrequenz gemäß unserer Timeout-Vorgabe (90 Sekunden).
+
+
+CASE
     Alter EDI-Weg (vom kfdcft01)  hier kommt eine Verbindung zu stande
     
     ftpadm@kfdcft01:~/zielidi/testcases> /sbin/tracepath ediftp.railconnect.com/21
