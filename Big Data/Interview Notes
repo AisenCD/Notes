@@ -1,3 +1,24 @@
+Hadoop-Projekte (Use Cases + Quellcode verstehen):
+  # Erstellung von Use Cases.
+  # Klärung von Source-Code auf Basis von Funktionalität-Workflow.
+      - Definitive Guide
+      - Internet (Stackoverflow)
+
+In der Restzeit vor allem Verständnis über Quellcode schaffen.
+
+
+    # Generelle Architektur-Optimierung (Hadoop)
+    # Unternehmensweite Doku-Pool (SearchEngine gebraucht, ELK, Solr etc.)
+    # Visualisierungstool (Qlikview)
+        - Use Cases (soweit vorhandene Beispiele)
+        - Verständnisse über die Source-Code-Funktionalität hinter den Use-Cases
+        
+
+
+Wie debuggen?
+  # Check logfile, check data-repository
+
+
 Manche (Prozent?) Daten fließen nach Host
 Manche (Prozent?) Daten fließen nach SAP
 Inbound-Daten aus FTP, Webservice z.B.
@@ -6,17 +27,15 @@ Konkretere Anwendungsfälle z.B. auf Basis von Oozie zu Hadoop.
 Gibt's Bedarf nach Storm?
 Zuerst ElasticSearch
 
-Mögliche Projekte:
-  # Generelle Architektur-Optimierung (Hadoop)
-  # Unternehmensweite Doku-Pool (SearchEngine gebraucht, ELK, Solr etc.)
-  # Visualisierungstool (Qlikview)
 
 Da IT-Abteilung stark vom Business ableitend ist, daher Motivation nach einer IT-Produkt-Driven-Unternehmen
 
 Vergleichbar:
   # Sqoop u. Axway Pickup
 
-
+Vergleich zwischen Oozie und cron
+  # https://stackoverflow.com/questions/29647978/which-is-the-best-scheduler-for-hadoop-oozie-or-cron
+  # http://beekeeperdata.com/posts/hadoop/2016/07/19/Cron-Alternatives-For-Hadoop.html
 
 #################################################################
 
