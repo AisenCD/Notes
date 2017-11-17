@@ -2,6 +2,7 @@ Hadoop-Projekte (Use Cases + Quellcode verstehen):
   # Erstellung von Use Cases.
   # Klärung von Source-Code auf Basis von Funktionalität-Workflow.
       - Definitive Guide
+      - Was passiert nach Ausführen vom jeden Command, z.B. sbin/start-dfs.sh
       - Internet (Stackoverflow)
   # Hadoop Operations Framework
 
