@@ -1,11 +1,13 @@
 Hadoop-Projekte (Use Cases + Quellcode verstehen):
-  # Erstellung von Use Cases.
+  # Erstellung von Use Cases 
   # Klärung von Source-Code auf Basis von Funktionalität-Workflow.
       - Definitive Guide
       - Was passiert nach Ausführen vom jeden Command, z.B. sbin/start-dfs.sh
       - Internet (Stackoverflow)
   # Hadoop Operations Framework
-  # ELK für Logging-Analyse
+  # ELK 
+      - Logging-Analyse
+      - Integration mit Hadoop
 
 
 In der Restzeit vor allem Verständnis über Quellcode schaffen.
