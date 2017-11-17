@@ -5,7 +5,7 @@ Hadoop-Projekte (Use Cases + Quellcode verstehen):
       - Was passiert nach Ausführen vom jeden Command, z.B. sbin/start-dfs.sh
       - Internet (Stackoverflow)
   # Hadoop Operations Framework
-
+  # ELK für Logging-Analyse
 
 
 In der Restzeit vor allem Verständnis über Quellcode schaffen.
