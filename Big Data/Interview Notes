@@ -14,6 +14,7 @@ In der Restzeit vor allem Verständnis über Quellcode schaffen.
 
 
     # Generelle Architektur-Optimierung (Hadoop)
+        - Einführung von Hadoop als Ersatz von älterer Struktur
     # Unternehmensweite Doku-Pool (SearchEngine gebraucht, ELK, Solr etc.)
     # Visualisierungstool (Qlikview)
         - Use Cases (soweit vorhandene Beispiele)
