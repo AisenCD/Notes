@@ -2,7 +2,8 @@ Hadoop-Projekte (Use Cases + Quellcode verstehen):
   # Erstellung von Use Cases 
   # Klärung von Source-Code auf Basis von Funktionalität-Workflow.
       - Definitive Guide
-      - Hadoop技术内幕（Common, HDFS + MapReduce + ）-      - Was passiert nach Ausführen vom jeden Command, z.B. sbin/start-dfs.sh
+      - Hadoop技术内幕（Common, HDFS + MapReduce + YARN）
+      - Was passiert nach Ausführen vom jeden Command, z.B. sbin/start-dfs.sh
   # Hadoop Operations Framework
   # ELK 
       - Logging-Analyse
