@@ -1,4 +1,11 @@
 CASE
+    1% Email von einem Partner klappt nicht nach Axway wegen nicht Einhalten an RFC2045 (eine  ";" zu wenig)
+    Daher muss zuerst das Mail an Outlook geschickt werden, danach von dort nach Axway weiterleiten. 
+    In Outlook werden die fehlenden Stellen ergänzt.
+
+
+
+CASE
     zum Partner fihac02:
 
     Dieser Partner macht jede 5 Minuten eine Abholung aus Axway, mit dem Wunsch dass die Verbindung ständig aktiv bleibt und sie keine QUIT eingeben brauchen.
