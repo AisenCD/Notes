@@ -58,12 +58,15 @@ HiWi:
 
 IBD: (Intern) Data Product Manager
   Projekt 1: Algo-Exploration für Dynamic Pricing
-    Idee: Standard Price-Prediction mit DM/ML + Optimierung von verschiedenen Subzielen, wie Überbuchung, Abhängigkeit vom Tagesablauf usw.
+    Idee:
+      Price-Prediction mit Standard-Methoden + 
+          Dynamic Pricing for Hotel Revenue Management Using Price Multipliers 
+          http://alumnus.caltech.edu/~amir/hotel-dyn-pricing-final.pdf
+      Standard Price-Prediction mit DM/ML + 
+          A Machine Learning Framework for Predicting Purchase by Online Customers based on Dynamic Pricing
+          https://www.sciencedirect.com/science/article/pii/S187705091401309X
+      Optimierung von verschiedenen Subzielen, wie Überbuchung, Abhängigkeit vom Tagesablauf usw.
 
-    A Machine Learning Framework for Predicting Purchase by Online Customers based on Dynamic Pricing
-      https://www.sciencedirect.com/science/article/pii/S187705091401309X
-    Dynamic Pricing for Hotel Revenue Management Using Price Multipliers 
-      http://alumnus.caltech.edu/~amir/hotel-dyn-pricing-final.pdf
 
     Product-Manager für Daten-Optimierung
       Funktion-Erweiterung von "Dynamic Pricing" in Hotel-Buchungsindustrie
