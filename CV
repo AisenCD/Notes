@@ -28,6 +28,7 @@ FDM:
     Vor-Credit, In-Credit, Nach-Credit
 
 
+
 PwC: 
   Projekt 1: Data Analytics with Audit Software wie ACL
     Fraud Analysis Techniques Using ACL
@@ -44,6 +45,7 @@ PwC:
         (Aufhören bei PwC wegen Umlagerung vom Team nach Düsseldorf), wenn nicht weg, dann nur IT-Audit möglich in der Zukunft
 
 
+
 HiWi:
   Projekt 1: Lehrmaterilien basteln 
     Analyse-Beispiele 
@@ -53,18 +55,24 @@ HiWi:
     Graphical Data Analysis with R
   
 
+
 IBD: (Intern) Data Product Manager
   Projekt 1: Algo-Exploration für Dynamic Pricing
     Idee: Standard Price-Prediction mit DM/ML + Optimierung von verschiedenen Subzielen, wie Überbuchung, Abhängigkeit vom Tagesablauf usw.
+
     A Machine Learning Framework for Predicting Purchase by Online Customers based on Dynamic Pricing
       https://www.sciencedirect.com/science/article/pii/S187705091401309X
+    Dynamic Pricing for Hotel Revenue Management Using Price Multipliers 
+      http://alumnus.caltech.edu/~amir/hotel-dyn-pricing-final.pdf
+
     Product-Manager für Daten-Optimierung
       Funktion-Erweiterung von "Dynamic Pricing" in Hotel-Buchungsindustrie
       Product Requirement Documentation
       DEMO
       ...
     
-    
+
+
 ZTE: Smartphone Test
   Projekt 1: Handy-Tester
     Standard-Test-Prozesse?
