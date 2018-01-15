@@ -55,6 +55,7 @@ HiWi:
 
 IBD: (Intern) Data Product Manager
   Projekt 1: Algo-Exploration für Dynamic Pricing
+    Idee: Standard Price-Prediction mit DM/ML + Optimierung von verschiedenen Subzielen, wie Überbuchung, Abhängigkeit vom Tagesablauf usw.
     A Machine Learning Framework for Predicting Purchase by Online Customers based on Dynamic Pricing
       https://www.sciencedirect.com/science/article/pii/S187705091401309X
     Product-Manager für Daten-Optimierung
