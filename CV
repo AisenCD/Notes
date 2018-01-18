@@ -1,5 +1,44 @@
 Big Data Credit Risk
   https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1568864
+  
+###############################
+# Vorbereitung-Gliederung
+###############################
+
+  Big Data Credit Risk Geschäftsmodelle:
+    ...
+
+  Credit Risk Management Prozesse:
+    Klassisch: ...
+      Unterschiede zu neuen Big Data Prozessen?
+    Big Data: ...
+      Bücher zur Big Data Risikomanagement
+        (Vor, Mitten und Nach-Kredit)
+      Teil vom BCBS239
+
+  Credit Risk Management Modelle:
+    Klassisch:
+      Credit Risk Management: Pricing, Measurement, and Modeling
+      Fraud Detection
+    Big Data: 
+      Erweiterung von klassischen Methoden
+      ML auf Credit Risk Management
+    
+  ML auf Credit Risk Management:  
+    Recent Methods from Statistics and  Machine Learning for Credit Scoring  
+      https://edoc.ub.uni-muenchen.de/17143/1/Kraus_Anne.pdf
+    Credit Scoring Using Machine Learning
+      https://arrow.dit.ie/cgi/viewcontent.cgi?referer=https://www.google.de/&httpsredir=1&article=1138&context=sciendoc
+    A hybrid approach for risk assessment of loan guarantee network
+      https://arxiv.org/pdf/1702.04642.pdf
+    A Neural Network Approach for Credit Risk Evaluation
+      https://economia.unich.it/dec/documenti/DEC/arc/wpapers/2006/2006-002.pdf
+    Consumer Credit Risk Models Via Machine-Learning Algorithms
+      https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1568864
+      
+  Branche-News
+      ...
+
 
 ##########################################################
 
