@@ -1,0 +1,2 @@
+ps -fe | grep 5021
+netstat -an | grep 5021
