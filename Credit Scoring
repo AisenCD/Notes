@@ -1,0 +1,85 @@
+Scorecard Development Proces
+
+
+Stage 1: Preliminaries and Planning 45 
+	Create Business Plan 46
+
+  Create Project Plan 57
+
+  Why "Scorecard" Format? 60
+    # Advantages with Big Data: treat applicants not only with variables indepently, but also considering depending factors 
+ 
+ 
+Stage 2: Data Review and Project Parameters 73
+
+  Data Availability and Quality Review 74
+
+  Data Gathering for Definition of Project Parameters 77
+
+  Definition of Project Parameters 78
+
+  Segmentation 103
+
+  Methodology 116
+
+  Review of Implementation Plan 117
+
+
+
+ 
+Stage 3: Development Database Creation 131
+ 
+  Development Sample Specification 132
+
+  Sampling 140
+
+  Development Data Collection and Construction 142
+
+  Adjusting for Prior Probabilities 144
+
+
+
+ 
+Stage 4: Scorecard Development 173
+
+  Explore Data 175
+
+  Missing Values and Outliers 175
+
+  Correlation 178
+
+  Initial Characteristic Analysis 179
+
+  Preliminary Scorecard 200
+
+  Reject Inference 215
+
+  Final Scorecard Production 236
+
+  Choosing a Scorecard 246
+
+  Validation 258
+
+
+Stage 5: Scorecard Management Reports 265
+ 
+  Gains Table 267
+
+  Characteristic Reports 273
+
+
+
+Stage 6: Scorecard Implementation 275
+ 
+  Pre-implementation Validation 276
+
+  Strategy Development 291
+
+  Notes 318
+ 
+
+Stage 7: Post-implementation 359
+ 
+  Scorecard and Portfolio Monitoring Reports 360
+
+  Reacting to Changes 377
