@@ -12,17 +12,21 @@ Stage 1: Preliminaries and Planning 45
  
 Stage 2: Data Review and Project Parameters 73
 
-  Data Availability and Quality Review 74
+	Data Availability and Quality Review 74
+		Optimal/minimal Sample Size of "Good" and "Bad"
+		Credit Bureau Data
+		
+	Data Gathering for Definition of Project Parameters 77
 
-  Data Gathering for Definition of Project Parameters 77
+	Definition of Project Parameters 78
+		Performance and Sample Windows
+	 	Bad Definition
+	
+	Segmentation 103
 
-  Definition of Project Parameters 78
+	Methodology 116
 
-  Segmentation 103
-
-  Methodology 116
-
-  Review of Implementation Plan 117
+	Review of Implementation Plan 117
 
 
 
@@ -42,23 +46,26 @@ Stage 3: Development Database Creation 131
  
 Stage 4: Scorecard Development 173
 
-  Explore Data 175
+	Explore Data 175
+		
+	Missing Values and Outliers 175
+		decision trees are neutral to missing values???
+		logistic regression requires complete data sets with no missing data???
 
-  Missing Values and Outliers 175
+	Correlation 178
+		parameters estimates obtained through ordinary least squares (OLS) regression will be reliable.2 ???
 
-  Correlation 178
+	Initial Characteristic Analysis 179
 
-  Initial Characteristic Analysis 179
+	Preliminary Scorecard 200
 
-  Preliminary Scorecard 200
+	Reject Inference 215
 
-  Reject Inference 215
+	Final Scorecard Production 236
 
-  Final Scorecard Production 236
+	Choosing a Scorecard 246
 
-  Choosing a Scorecard 246
-
-  Validation 258
+	Validation 258
 
 
 Stage 5: Scorecard Management Reports 265
