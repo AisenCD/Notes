@@ -78,12 +78,13 @@ Stage 5: Scorecard Management Reports 265
 
 Stage 6: Scorecard Implementation 275
  
-  Pre-implementation Validation 276
+	Pre-implementation Validation 276
 
-  Strategy Development 291
+	Strategy Development 291
+		In addition, if scorecard scaling is changed, IT may be required to reprogram any hardcoded policy rules, strategies based on scores, and other interfaces used for decision making. This is where flexible infrastructure, discussed earlier in the book, can reduce the implementation time, and avoid the need for the business to compromise strategy just to accommodate technology shortcomings.
 
-  Notes 318
- 
+	Notes 318	
+
 
 Stage 7: Post-implementation 359
  
