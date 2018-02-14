@@ -1,5 +1,35 @@
-Udemy: Deep Learning A-Z™: Hands-On Artificial Neural Networks
+################
+# Working Plan
+################
 
+Business:
+    Existing businesses and methods in the industry
+        Summary and structuring with ideas from collected "Big Data Credit Business" materials
+        Developing prototypes ("Code-Links")
+    Open questions and development trends in the industry
+        Digging, summary and structuring from different materials
+        Developing strategy for continuous improvement
+
+DM & ML
+    Basics of DM (for Blog)
+        Machine Learning A-Z™: Hands-On Python & R In Data Science
+    Basics of ML (for Blog)           
+        Deep Learning A-Z™: Hands-On Artificial Neural Networks
+    Basics of Tensorflow (for Blog)
+        Complete Guide to TensorFlow for Deep Learning with Python
+
+
+Big Data Engineering
+    Webserver
+    Elastic Search
+    Hadoop
+    
+
+
+
+###############
+# Code-Links
+###############
 
 Marketing:
     Github: Algorithmic Marketing, customer segment, product recommendation
