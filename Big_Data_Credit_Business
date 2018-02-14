@@ -1,6 +1,22 @@
 ################
 # Working Plan
 ################
+DM & ML
+    Basics of DM (for Blog)
+        Machine Learning A-Z™: Hands-On Python & R In Data Science
+    Basics of ML (for Blog)           
+        Deep Learning A-Z™: Hands-On Artificial Neural Networks
+    Basics of Tensorflow (for Blog)
+        Complete Guide to TensorFlow for Deep Learning with Python
+    DM & ML for credit business
+        Risk management
+            Credit-scoring
+            Fraud detection
+        marketing
+            Algo marketing
+            Churn rate
+            Sales prediction
+            
 
 Business:
     Existing businesses and methods in the industry
@@ -9,14 +25,6 @@ Business:
     Open questions and development trends in the industry
         Digging, summary and structuring from different materials
         Developing strategy for continuous improvement
-
-DM & ML
-    Basics of DM (for Blog)
-        Machine Learning A-Z™: Hands-On Python & R In Data Science
-    Basics of ML (for Blog)           
-        Deep Learning A-Z™: Hands-On Artificial Neural Networks
-    Basics of Tensorflow (for Blog)
-        Complete Guide to TensorFlow for Deep Learning with Python
 
 
 Big Data Engineering
